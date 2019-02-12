@@ -1,0 +1,36 @@
+{
+    "name": "svelte-image-compare",
+    "version": "1.0.0",
+    "description": "Image comparison slider for Svelte 3",
+    "svelte": "src/index.html",
+    "main": "index.js",
+    "module": "index.mjs",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "rollup -c",
+        "prepublishOnly": "npm run build"
+    },
+    "files": [
+        "src",
+        "index.mjs",
+        "index.js"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/PaulMaly/svelte-image-compare.git"
+    },
+    "keywords": [
+        "svelte"
+    ],
+    "author": "PaulMaly",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/PaulMaly/svelte-image-compare/issues"
+    },
+    "homepage": "https://github.com/PaulMaly/svelte-image-compare#readme",
+    "devDependencies": {
+        "rollup": "latest",
+        "rollup-plugin-svelte": "latest",
+        "svelte": "alpha"
+    }
+}
