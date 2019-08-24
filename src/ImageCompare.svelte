@@ -47,8 +47,8 @@
 		after = '',
 		img;
 
-	function resize() {
-		imgOffset = img.getBoundingClientRect();
+	function resize(e) {
+		imgOffset = (e.type === 'load' ? e.target : img).getBoundingClientRect();
 	}
 
 	function move(e) {
