@@ -37,16 +37,15 @@
 </div>
 
 <script>	
-	let imgOffset = null,
+	let hideOnSlide = true,
+		imgOffset = null,
 		sliding = false,
-		img;
-
-	export let before = '', 
-		after = '',
-		offset = 0.5,
-		overlay = true,
 		contain = false,
-		hideOnSlide = true;
+		overlay = true,
+		offset = 0.5,
+		before = '',
+		after = '',
+		img;
 
 	function resize() {
 		imgOffset = img.getBoundingClientRect();
@@ -69,12 +68,13 @@
 		sliding = false;
 	}
 
-	let w, h, x, style, opacity;
 	$: w = imgOffset && imgOffset.width;
 	$: h = imgOffset && imgOffset.height;
 	$: x = w * offset;
 	$: opacity = hideOnSlide && sliding ? 0 : 1;
 	$: style = contain ? `width:100%;height:100%;` : `width:${w}px;height:${h}px;`;
+
+	export { before, after, offset, overlay, contain, hideOnSlide };
 </script>
 
 <style>
