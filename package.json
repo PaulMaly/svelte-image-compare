@@ -1,6 +1,6 @@
 {
     "name": "svelte-image-compare",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Image comparison slider for Svelte 3",
     "svelte": "src/index.js",
     "main": "index.js",
