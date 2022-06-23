@@ -126,6 +126,7 @@
 		border-radius: 50px;
 		top: calc(50% - 20px);
 		border: 4px solid white;
+		box-sizing: content-box;
 	}
 	.handle:before, .handle:after {
 		content: "";
