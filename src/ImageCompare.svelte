@@ -36,7 +36,9 @@
 	</div>
 </div>
 
-<script>	
+<script>
+	import { onMount } from "svelte"
+
 	let hideOnSlide = true,
 		imgOffset = null,
 		sliding = false,
@@ -67,6 +69,8 @@
 	function end() {
 		sliding = false;
 	}
+
+	onMount(() => resize({type: ""}))
 
 	$: w = imgOffset && imgOffset.width;
 	$: h = imgOffset && imgOffset.height;
